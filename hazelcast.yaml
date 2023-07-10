@@ -1,0 +1,22 @@
+hazelcast:
+  cluster-name: my-cluster
+  network:
+    join:
+      multicast:
+        enabled: false
+      tcp-ip:
+        enabled: true
+        members:
+          - 127.0.0.1:5701
+          - 127.0.0.1:5702
+    interfaces:
+      interface:
+        - 127.0.0.*
+  hazelcast:
+    instance-name: instance1
+    configuration:
+      instance-name: instance1
+  hazelcast:
+    instance-name: instance2
+    configuration:
+      instance-name: instance2
